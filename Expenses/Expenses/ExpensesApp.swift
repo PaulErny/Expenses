@@ -13,7 +13,8 @@ struct ExpensesApp: App {
         WindowGroup {
             TabView {
                 Homepage()
-                Text("categories")
+                Categories()
+                    .addNeomorphismMask(numberOfSubviews: 3)
                 Text("premium")
             }
             .tabViewStyle(.page)
