@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Categories: View {
     var body: some View {
-        VStack(spacing: 48) {
+        VStack(spacing: 44) {
             Category(label: "Mes abonnements")
             Category(label: "Mes dépenses")
             Category(label: "Par mois")

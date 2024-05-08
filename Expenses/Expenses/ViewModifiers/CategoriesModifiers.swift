@@ -17,20 +17,20 @@ private struct NeomorphismMask: ViewModifier {
                 .resizable()
                 .overlay {
                     LinearGradient(colors: [
-                        Color(hex: "00186E").opacity(0.50),
-                        Color(hex: "000B30").opacity(0.35)
+                        Color(hex: "00186E").opacity(0.40),
+                        Color(hex: "000B30").opacity(0.2)
                     ], startPoint: .top, endPoint: .bottom)
                 }
                 .ignoresSafeArea()
                 .mask {
-                    VStack(spacing: 48) {
+                    VStack(spacing: 44) {
                         ForEach(0...numberOfSubviews - 1, id: \.self) { _ in 
                             Category.mask
                         }
                     }
                 }
-                .shadow(color: Color(hex: "232E5D"), radius: 8, x: -8, y: -8)
-                .shadow(color: Color(hex: "000000"), radius: 8, x: 4, y: 4)
+                .shadow(color: Color(hex: "232E5D"), radius: 5, x: -8, y: -8)
+                .shadow(color: Color(hex: "000000"), radius: 3, x: 4, y: 4)
             
             content
         }

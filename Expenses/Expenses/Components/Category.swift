@@ -16,7 +16,7 @@ struct Category: View {
 
     var body: some View {
         ZStack(alignment: .bottom) {
-            VStack(alignment: .trailing) {
+            VStack(alignment: .trailing, spacing: 10) {
                 HStack {
                     Text(label)
                         .font(.custom("Montserrat-Regular", size: 24) )
@@ -37,10 +37,17 @@ struct Category: View {
                     ExpenseLine(emoji: "📺", price: 14.99)
                 }
                 .padding(.trailing, 20)
+                HStack {
+                    Spacer()
+                    Image(systemName: "chevron.down")
+                        .font(.custom("Montserrat-Regular", size: 20) )
+                        .foregroundStyle(Color(hex: "DFDFDF"))
+                    Spacer()
+                }
             }
             .frame(width: 330, height: 220, alignment: .topTrailing)
             RoundedRectangle(cornerRadius: 20)
-                .fill(LinearGradient(colors: [.clear, .backgroundBlue], startPoint: .top, endPoint: .bottom))
+                .fill(LinearGradient(colors: [.clear, .black.opacity(0.3)], startPoint: .top, endPoint: .bottom))
                 .frame(width: 330, height: 110)
         }
     }
