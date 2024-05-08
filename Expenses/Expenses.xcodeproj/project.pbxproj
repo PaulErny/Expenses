@@ -10,6 +10,8 @@
 		DA2A8F972BE3D16B00859A61 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A8F962BE3D16B00859A61 /* Categories.swift */; };
 		DA2A8F992BE3DACA00859A61 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A8F982BE3DACA00859A61 /* Category.swift */; };
 		DA2A8F9C2BE3E5D500859A61 /* CategoriesModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A8F9B2BE3E5D500859A61 /* CategoriesModifiers.swift */; };
+		DA2A8F9E2BE3EBD600859A61 /* Premium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A8F9D2BE3EBD600859A61 /* Premium.swift */; };
+		DA2A8FA02BE3F3C600859A61 /* ArcJoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A8F9F2BE3F3C600859A61 /* ArcJoin.swift */; };
 		DA641F592BE292F3008AF0BC /* ExpensesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA641F582BE292F3008AF0BC /* ExpensesApp.swift */; };
 		DA641F5B2BE292F3008AF0BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA641F5A2BE292F3008AF0BC /* ContentView.swift */; };
 		DA641F5D2BE292F7008AF0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA641F5C2BE292F7008AF0BC /* Assets.xcassets */; };
@@ -24,6 +26,7 @@
 		DA641F8F2BE29BC9008AF0BC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA641F8C2BE29BC9008AF0BC /* Montserrat-Regular.ttf */; };
 		DA641F932BE2A6F1008AF0BC /* CategoriesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA641F922BE2A6F1008AF0BC /* CategoriesButton.swift */; };
 		DA641F952BE2B1AC008AF0BC /* ExpensesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA641F942BE2B1AC008AF0BC /* ExpensesList.swift */; };
+		DACD72E02BEA6C8400A32D55 /* TextBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD72DF2BEA6C8400A32D55 /* TextBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		DA2A8F962BE3D16B00859A61 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		DA2A8F982BE3DACA00859A61 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		DA2A8F9B2BE3E5D500859A61 /* CategoriesModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModifiers.swift; sourceTree = "<group>"; };
+		DA2A8F9D2BE3EBD600859A61 /* Premium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Premium.swift; sourceTree = "<group>"; };
+		DA2A8F9F2BE3F3C600859A61 /* ArcJoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcJoin.swift; sourceTree = "<group>"; };
 		DA641F552BE292F3008AF0BC /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA641F582BE292F3008AF0BC /* ExpensesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesApp.swift; sourceTree = "<group>"; };
 		DA641F5A2BE292F3008AF0BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		DA641F912BE29E02008AF0BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DA641F922BE2A6F1008AF0BC /* CategoriesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButton.swift; sourceTree = "<group>"; };
 		DA641F942BE2B1AC008AF0BC /* ExpensesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesList.swift; sourceTree = "<group>"; };
+		DACD72DF2BEA6C8400A32D55 /* TextBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +174,10 @@
 			isa = PBXGroup;
 			children = (
 				DA641F922BE2A6F1008AF0BC /* CategoriesButton.swift */,
+				DA2A8F9F2BE3F3C600859A61 /* ArcJoin.swift */,
 				DA2A8F982BE3DACA00859A61 /* Category.swift */,
 				DA641F942BE2B1AC008AF0BC /* ExpensesList.swift */,
+				DACD72DF2BEA6C8400A32D55 /* TextBubble.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -178,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				DA641F842BE2943D008AF0BC /* Homepage.swift */,
+				DA2A8F9D2BE3EBD600859A61 /* Premium.swift */,
 				DA2A8F962BE3D16B00859A61 /* Categories.swift */,
 			);
 			path = Views;
@@ -334,12 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2A8FA02BE3F3C600859A61 /* ArcJoin.swift in Sources */,
 				DA641F952BE2B1AC008AF0BC /* ExpensesList.swift in Sources */,
 				DA2A8F972BE3D16B00859A61 /* Categories.swift in Sources */,
 				DA641F852BE2943D008AF0BC /* Homepage.swift in Sources */,
 				DA641F882BE299A9008AF0BC /* Color.swift in Sources */,
+				DA2A8F9E2BE3EBD600859A61 /* Premium.swift in Sources */,
 				DA641F5B2BE292F3008AF0BC /* ContentView.swift in Sources */,
 				DA2A8F9C2BE3E5D500859A61 /* CategoriesModifiers.swift in Sources */,
+				DACD72E02BEA6C8400A32D55 /* TextBubble.swift in Sources */,
 				DA641F932BE2A6F1008AF0BC /* CategoriesButton.swift in Sources */,
 				DA641F592BE292F3008AF0BC /* ExpensesApp.swift in Sources */,
 				DA2A8F992BE3DACA00859A61 /* Category.swift in Sources */,

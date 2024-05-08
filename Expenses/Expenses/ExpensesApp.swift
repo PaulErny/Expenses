@@ -15,7 +15,7 @@ struct ExpensesApp: App {
                 Homepage()
                 Categories()
                     .addNeomorphismMask(numberOfSubviews: 3)
-                Text("premium")
+                Premium()
             }
             .tabViewStyle(.page)
             .ignoresSafeArea()
