@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct CategoriesButton: View {
+    @State var test = "red"
+    var testPool = ["red", "green", "blue"]
+
     var body: some View {
-        Button(action: {}, label: {
+        Menu {
+            Picker(selection: $test, label: EmptyView()) {
+                ForEach(testPool, id: \.self) { value in
+                    Text("🍟 |   " + value)
+                }
+            }
+            .pickerStyle(.inline)
+        } label: {
             HStack {
                 Text("CATEGORIES")
                     .font(.custom("Montserrat-Regular", size: 16))
@@ -28,7 +38,7 @@ struct CategoriesButton: View {
                     .overlay(
                         Color(hex: "00186E").opacity(0.42)
                     )
-
+                
                     .cornerRadius(50)
                     .shadow(color: .main, radius: 6, x: 0, y: 0)
                     .overlay(
@@ -36,9 +46,9 @@ struct CategoriesButton: View {
                             .stroke(.main, lineWidth: 2)
                     )
             }
-        })
-        .buttonStyle(PlainButtonStyle())
-        .foregroundStyle(Color.main)
+            .foregroundStyle(Color.main)
+            //        .buttonStyle(PlainButtonStyle())
+        }
     }
 }
 
