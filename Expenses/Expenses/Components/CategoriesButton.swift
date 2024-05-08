@@ -37,6 +37,7 @@ struct CategoriesButton: View {
                     )
             }
         })
+        .buttonStyle(PlainButtonStyle())
         .foregroundStyle(Color.main)
     }
 }
