@@ -27,6 +27,7 @@
 		DA641F932BE2A6F1008AF0BC /* CategoriesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA641F922BE2A6F1008AF0BC /* CategoriesButton.swift */; };
 		DA641F952BE2B1AC008AF0BC /* ExpensesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA641F942BE2B1AC008AF0BC /* ExpensesList.swift */; };
 		DACD72E02BEA6C8400A32D55 /* TextBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD72DF2BEA6C8400A32D55 /* TextBubble.swift */; };
+		DACD72E22BEBB32900A32D55 /* ExpenseLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD72E12BEBB32900A32D55 /* ExpenseLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		DA641F922BE2A6F1008AF0BC /* CategoriesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesButton.swift; sourceTree = "<group>"; };
 		DA641F942BE2B1AC008AF0BC /* ExpensesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesList.swift; sourceTree = "<group>"; };
 		DACD72DF2BEA6C8400A32D55 /* TextBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubble.swift; sourceTree = "<group>"; };
+		DACD72E12BEBB32900A32D55 /* ExpenseLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				DA641F922BE2A6F1008AF0BC /* CategoriesButton.swift */,
+				DACD72E12BEBB32900A32D55 /* ExpenseLine.swift */,
 				DA2A8F9F2BE3F3C600859A61 /* ArcJoin.swift */,
 				DA2A8F982BE3DACA00859A61 /* Category.swift */,
 				DA641F942BE2B1AC008AF0BC /* ExpensesList.swift */,
@@ -354,6 +357,7 @@
 				DACD72E02BEA6C8400A32D55 /* TextBubble.swift in Sources */,
 				DA641F932BE2A6F1008AF0BC /* CategoriesButton.swift in Sources */,
 				DA641F592BE292F3008AF0BC /* ExpensesApp.swift in Sources */,
+				DACD72E22BEBB32900A32D55 /* ExpenseLine.swift in Sources */,
 				DA2A8F992BE3DACA00859A61 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

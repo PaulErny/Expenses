@@ -32,21 +32,13 @@ struct Category: View {
                     Spacer()
                 }
                 VStack(spacing: 10) {
-                    Text("🎮 - 5.99 €")
-                        .font(.custom("Montserrat-Light", size: 24) )
-                        .foregroundStyle(Color.main)
-                    Text("💡- 69 €")
-                        .font(.custom("Montserrat-Light", size: 24) )
-                        .foregroundStyle(Color.main)
-                    Text("📺 - 14.99 €")
-                        .font(.custom("Montserrat-Light", size: 24) )
-                        .foregroundStyle(Color.main)
+                    ExpenseLine(emoji: "🎮", price: 5.99)
+                    ExpenseLine(emoji: "💡", price: 69)
+                    ExpenseLine(emoji: "📺", price: 14.99)
                 }
-                .shadow(color: Color.main, radius: 2, x: 0, y: 0)
                 .padding(.trailing, 20)
             }
             .frame(width: 330, height: 220, alignment: .topTrailing)
-            //            .clipShape(RoundedRectangle(cornerRadius: 20))
             RoundedRectangle(cornerRadius: 20)
                 .fill(LinearGradient(colors: [.clear, .backgroundBlue], startPoint: .top, endPoint: .bottom))
                 .frame(width: 330, height: 110)
